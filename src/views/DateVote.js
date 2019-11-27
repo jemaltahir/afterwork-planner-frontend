@@ -102,7 +102,7 @@ function DateVote({ currentUser, eventId }) {
                 setThreshold(event.data().threshold)
                 handleSetConfirmed(event.data().confirmed)
             })
-    }, []);
+    }, [dates, eventId]);
 
     return(
         <div className="container-fluid">
